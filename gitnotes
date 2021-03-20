@@ -1,0 +1,29 @@
+    GIT STEPS:
+    step one: choose the direcotry where u need to have version control.In our case it is files of web-server
+    step two: from bash, give git init.It will generate a git repository in that direcotry.so web-server is ur 
+    master and all files inside it will be kept track.
+    step3: You can see .git folder getting generated.That will keep all the changes.It is not visible usually but
+    you can enable in settings
+    step4: Go to github and create repository with any name.Not neccessary to have the same name as master folder.
+    step 5: In master, $ git remote add origin https://github.com/siddharth-0708/node-project.git . this will add npde-project
+    in github as origine where all the web-server files will be pushed and tracked.
+    $ git remote add upstream https://github.com/siddharth-0708/node-project.git to use command git pull upstream master
+    Need to commit first change before adding upstream and push command
+	$ git push --set- https://github.com/siddharth-0708/node-project.git to just use push
+
+    $ git push heroku master
+    To https://git.heroku.com/siddharth0708-weather.git
+    https://siddharth0708-weather.herokuapp.com/ deployed to Heroku
+    PS C:\> .\/users/AF001AX/mongoDB/bin/mongod.exe --dbpath=/users/AF001AX/mongoDB-data from c to open mongof.exe ie terminal.jUST LIKE GIT
+    note: From now on GIT has removed the word master.So now if u generate new git, rename it with main and use pull upstream main $ git branch -m main master
+    change one
+
+    to run mongoDB server:
+    1) open powershell
+    2) go to c: from the current direcotry
+    3) use the below command
+    PS F:\siddharth project\myProject\sidNo> c:
+PS C:\> .\/users/AF001AX/mongoDB/bin/mongod.exe --dbpath=/users/AF001AX/mongoDB-data
+
+Note: if not connecting then run the mongod.exe once manually in folder
+Need to go to settings JSON and give the path to connect to bash and node
