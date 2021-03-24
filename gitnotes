@@ -1,4 +1,4 @@
-    GIT STEPS:
+    GIT STEPS: 
     step one: choose the direcotry where u need to have version control.In our case it is files of web-server
     step two: from bash, give git init.It will generate a git repository in that direcotry.so web-server is ur 
     master and all files inside it will be kept track.
