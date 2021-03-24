@@ -1,0 +1,22 @@
+{
+  "name": "projectgame",
+  "version": "1.0.0",
+  "description": "My project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddharth-0708/projectGame.git"
+  },
+  "author": "siddharth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddharth-0708/projectGame/issues"
+  },
+  "homepage": "https://github.com/siddharth-0708/projectGame#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

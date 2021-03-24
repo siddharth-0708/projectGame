@@ -1,0 +1,2 @@
+In all projects start with npm init
+then install your requirements
