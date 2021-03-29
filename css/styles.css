@@ -1,0 +1,197 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+	overflow: hidden;
+}
+
+#canvasContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	user-select: none;
+}
+
+.VD #canvasContainer {
+	width: 1280px;
+	height: 720px;
+	transform-origin: 0 0;
+	box-shadow: 0 0 25px #000;
+}
+
+.VD #containerbg {
+	width: 102%;
+	height: 102%;
+	position: absolute;
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	left: -1%;
+	top: -1%;
+}
+
+.VL #containerbg,
+.VP #containerbg {
+	display: none;
+}
+
+#goFS {
+	position: absolute;
+	z-index: 100;
+}
+
+#iosSwipeHand {
+	-webkit-animation: swipeAnimation 1s infinite linear;
+}
+
+@-webkit-keyframes swipeAnimation {
+	from {
+		-webkit-transform: translate(0, 100px) scale(0.5, 0.5);
+	}
+
+	to {
+		-webkit-transform: translate(0, -25px) scale(0.5, 0.5);
+	}
+}
+
+#gameRules {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	z-index: 999;
+	overflow: hidden;
+	/* line-height: 30px; */
+}
+sup {
+	vertical-align: super;
+	font-size: 18px !important;
+}
+
+#grCloseBtn {
+	display: block;
+	position: absolute;
+	float: right;
+	top: 20px;
+	cursor: pointer;
+	right: 20px;
+}
+
+.VD #grCloseBtn {
+	right: 36px;
+}
+
+#grContent {
+	overflow-y: scroll;
+	overflow-x: unset;
+	display: block;
+	max-width: calc(100% - 4%);
+	word-break: break-word;
+	height: calc(100% - 4%);
+	padding: 4%;
+}
+
+/* @media screen and (min-width: 800px) {
+			#grContent{
+				height: 640px;
+				padding: 40px;
+			}
+		} */
+
+li {
+	padding-bottom: 10px;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ffffff;
+}
+
+td,
+th {
+	border: 1px solid #ffffff;
+	text-align: left;
+	padding: 12px;
+}
+th {
+	min-width: 150px;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #131212;
+}
+
+.autoSpinSettings img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+	max-width: 432px;
+}
+
+.game img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+	max-width: 432px;
+}
+
+h1 {
+	margin-top: 60px;
+}
+
+h4 {
+	color: yellow;
+}
+
+.txtCenter {
+	text-align: center;
+	line-height: 1.2;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+td img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/* width: 40px; */
+	height: 40px;
+}
+.disable-select {
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	touch-action: pan-y;
+}
+
+#gameOpened {
+	color: white;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	padding: 70px 0;
+    text-align: center;
+    display: none;
+}
