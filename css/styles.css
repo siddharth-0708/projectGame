@@ -1,4 +1,10 @@
-* {
+#canvasContainer {
+	width: 1280px;
+	height: 720px;
+	transform-origin: 0 0; /*check this*/
+	box-shadow: 0 0 25px #000;
+}
+/* * {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -76,7 +82,7 @@ body {
 	font-size: 25px;
 	z-index: 999;
 	overflow: hidden;
-	/* line-height: 30px; */
+	/* line-height: 30px; 
 }
 sup {
 	vertical-align: super;
@@ -111,7 +117,7 @@ sup {
 				height: 640px;
 				padding: 40px;
 			}
-		} */
+		} 
 
 li {
 	padding-bottom: 10px;
@@ -174,15 +180,15 @@ td img {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	/* width: 40px; */
+	/* width: 40px; 
 	height: 40px;
 }
 .disable-select {
-	user-select: none; /* supported by Chrome and Opera */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* supported by Chrome and Opera 
+	-webkit-user-select: none; /* Safari 
+	-khtml-user-select: none; /* Konqueror HTML 
+	-moz-user-select: none; /* Firefox 
+	-ms-user-select: none; /* Internet Explorer/Edge 
 	touch-action: pan-y;
 }
 
@@ -194,4 +200,4 @@ td img {
 	padding: 70px 0;
     text-align: center;
     display: none;
-}
+} */
