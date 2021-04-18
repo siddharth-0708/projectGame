@@ -10,7 +10,7 @@
     $ git remote add upstream https://github.com/siddharth-0708/node-project.git to use command git pull upstream master
     Need to commit first change before adding upstream and push command
 	$ git push --set- https://github.com/siddharth-0708/node-project.git to just use push
-    commit command - git commit m-"new"
+    commit command - git commit -m"new"
 
     $ git push heroku master
     To https://git.heroku.com/siddharth0708-weather.git
