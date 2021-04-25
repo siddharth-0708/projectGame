@@ -28,3 +28,5 @@ PS C:\> .\/users/AF001AX/mongoDB/bin/mongod.exe --dbpath=/users/AF001AX/mongoDB-
 
 Note: if not connecting then run the mongod.exe once manually in folder
 Need to go to settings JSON and give the path to connect to bash and node
+
+$ npm install node sass@1.32.8

@@ -1,5 +1,5 @@
 const app = new PIXI.Application({
-    width: 1280, height: 720, backgroundColor: 0x000000, //resolution: window.devicePixelRatio ?2:1 //need to check DPR here, border also not applying
+    width: 1280, height: 720, backgroundColor: 0x000000, autoResize: true, resolution: window.devicePixelRatio > 1 ? 2:1 
 });
 var view = app.view;
 var canvasContainer = document.createElement("div");
@@ -9,6 +9,13 @@ canvasContainer.appendChild(view);
 canvasContainer.style.position = "absolute"; //check this
 view.style.position = "absolute";
 document.getElementsByTagName("head")[0].style.margin = "0px";
+
+//pixi
+const container = new PIXI.Container();
+app.stage.addChild(container);
+
+let text = new PIXI.Text('This is a PixiJS text',{fontFamily : 'Arial', fontSize: 50, fill : 0xff1010, align : 'center'});
+container.addChild(text);
 
 var resizeCanvasContainer = function () {
     var maxWidth = 1280;
@@ -24,7 +31,7 @@ var resizeCanvasContainer = function () {
     console.log("InnerHeight / maxHeight = "+ window.innerHeight / maxHeight);
     var ratio = Math.min(window.innerWidth / maxWidth, window.innerHeight / maxHeight) * canvasMargin;
     console.log("Math.min(window.innerWidth / maxWidth, window.innerHeight / maxHeight) * canvasMargin = " + ratio);
-    var x = (window.innerWidth - ratio * maxWidth) / 2;
+    var x = (window.innerWidth - ratio * maxWidth) / 2 - 5;
     console.log("(x = window.innerWidth - ratio * maxWidth) / 2 = "+ x);
     var y = (window.innerHeight - ratio * maxHeight) / 2;
     console.log("(y = window.innerHeight - ratio * maxHeight) / 2 = "+ y);
